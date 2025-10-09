@@ -1,45 +1,109 @@
 :root {
   --white: #FFFFFF;
-  --black: #000000;
-  --opacity: 100;
+  --black: #181818;
+  --primary: #00C9A7;
+  --secondary: #FF6B6B;
+  --cardBg: #F3F3F3;
 }
 
 body {
   background: var(--bg);
   color: var(--fontColor);
-  font-family: Helvetica;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
 }
 
-li {
-  list-style: circle;
+.header {
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+  color: var(--white);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  animation: fadeInDown 1s;
 }
 
-.list {
-  list-style: square;
+.hero-img {
+  width: 100%;
+  max-width: 900px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.card {
+  background: var(--cardBg);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 500px;
+  border-radius: 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  animation: fadeInUp 1.2s;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+.btn {
+  position: fixed;
+  top: 24px;
+  right: 40px;
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  border: none;
+  color: var(--white);
+  background: var(--primary);
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+  z-index: 10;
+}
+.btn:hover {
+  background: var(--secondary);
+  transform: scale(1.1);
 }
 
 .light-theme {
   --bg: var(--white);
   --fontColor: var(--black);
-  --btnBg: var(--black);
+  --btnBg: var(--primary);
   --btnFontColor: var(--white);
-  
+  --cardBg: #F3F3F3;
 }
 
 .dark-theme {
-  --bg: var(--black);
+  --bg: #23272F;
   --fontColor: var(--white);
-  --btnBg: var(--white);
-  --btnFontColor: var(--black);
+  --btnBg: var(--secondary);
+  --btnFontColor: var(--white);
+  --cardBg: #2C2F36;
 }
-.btn {
-  position: fixed;
-  top: 8px;
-  right: 30px;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  border: 3px solid #FFFFFF;
-  color: var(--btnFontColor);
-  background-color: var(--btnBg);
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
 }
