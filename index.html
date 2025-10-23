@@ -16,27 +16,67 @@
     <p class="subtitle">De wekker die je voelt, niet hoort</p>
   </header>
   <main>
-    <div class="card-row">
-      <section class="card">
-        <h2>Het probleem</h2>
-        <ul>
-          <li>Hij wordt niet wakker</li>
-          <li>Geluid werkt niet voor dove mensen</li>
-          <li>Iedereen verdient een goede start van de dag!</li>
-        </ul>
-      </section>
-      <section class="card">
-        <h2>Onze oplossing</h2>
-        <ul>
-        <li>Vibratie-alarmen</li>
-        <li>Visuele signalen</li>
-        <li>Persoonlijke instellingen</li>
-      </ul>
+    <section class="problem-full">
+      <h2>Probleemstelling</h2>
+      <p>
+        Een dove jongen wordt niet wakker. Waar een gewoon alarmgeluid voor de meeste mensen vanzelfsprekend is om de dag te beginnen of om te waarschuwen bij gevaar, blijft het voor iemand die niet kan horen volledig betekenisloos. Dit kan leiden tot praktische problemen, zoals te laat komen op school of werk, maar ook tot ernstige risico’s in noodsituaties waarin snel handelen vereist is.
+      </p>
+      <p>
+        Voor dove of slechthorende personen is het ontbreken van auditieve prikkels een constante uitdaging in het dagelijks leven. Traditionele wekkers vertrouwen volledig op geluid om iemand te wekken, waardoor zij ontoegankelijk zijn voor wie niet kan horen.
+      </p>
+      <p>
+        Een wekker speciaal ontworpen voor doven biedt hier een doeltreffende oplossing. In plaats van geluid maakt zo’n wekker gebruik van trillingen, lichtsignalen of zelfs koppeling met een smartwatch of kussen dat trilt. Door sterke trillingen of felle lichtflitsen wordt de persoon op een andere manier geprikkeld en effectief gewekt.
+      </p>
+      <p>
+        Deze technologische aanpassing is meer dan alleen praktisch — het vergroot de zelfstandigheid, veiligheid en gelijkheid van dove mensen in hun dagelijks leven. Een eenvoudige innovatie als een trilwekker kan dus het verschil maken tussen afhankelijkheid en autonomie, tussen onveiligheid en geruststelling.
+      </p>
     </section>
-    </div>
+    <section class="ideas-full">
+      <h2>Mogelijke ideeën</h2>
+      <div class="accordion accordion-full">
+        <button class="accordion-btn">
+          Vibratie-alarmen
+          <span class="accordion-arrow">&#9654;</span>
+        </button>
+        <div class="accordion-content">
+          <p>
+            Een trilwekker maakt gebruik van sterke vibraties om iemand op een stille en doeltreffende manier te wekken. In plaats van geluid, dat voor dove of slechthorende personen niet hoorbaar is, zorgt de trilling ervoor dat de gebruiker op een prettige manier wakker wordt. Dit kan bijvoorbeeld met een klein apparaatje dat onder het kussen wordt gelegd of met een polsband die begint te trillen op het ingestelde tijdstip. Dankzij deze technologie kunnen dove personen zelfstandig en op tijd wakker worden, zonder afhankelijk te zijn van anderen of geluidsalarmen.
+          </p>
+        </div>
+        <button class="accordion-btn">
+          Visuele signalen
+          <span class="accordion-arrow">&#9654;</span>
+        </button>
+        <div class="accordion-content">
+          <p>
+            Felle lichtflitsen of een automatisch aangeschakelde lamp zorgen voor een duidelijke visuele prikkel die dient als wek- of waarschuwingssignaal. Dit systeem kan worden gekoppeld aan een wekker of alarmsysteem, zodat de kamer op het ingestelde moment helder wordt verlicht. Voor dove of slechthorende personen biedt deze methode een effectief alternatief voor geluidssignalen, doordat het plotselinge licht hun aandacht trekt en hen op een betrouwbare manier wekt of waarschuwt.          </p>
+        </div>
+        <button class="accordion-btn">
+          Persoonlijke instellingen
+          <span class="accordion-arrow">&#9654;</span>
+        </button>
+        <div class="accordion-content">
+          <p>
+            De gebruiker kan zelf bepalen welke vorm van prikkel het meest effectief is: vibratie, lichtsignalen of een combinatie van beide. Op die manier kan de wekker volledig worden afgestemd op persoonlijke voorkeuren en specifieke omstandigheden. Dit maakt het systeem flexibel en gebruiksvriendelijk, zodat iedereen op de manier die het beste bij hem of haar past, op tijd en comfortabel gewekt kan worden.          </p>
+        </div>
+      </div>
+    </section>
     <button class="btn">Dark</button>
   </main>
   <script src="app.js"></script>
+  <script>
+    document.querySelectorAll('.accordion-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        this.classList.toggle('active');
+        const content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
   <noscript>You need to enable JavaScript to view the full site.</noscript>
 </body>
 </html>
