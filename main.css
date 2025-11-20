@@ -101,6 +101,7 @@ ul {
   --btnBg: var(--primary);
   --btnFontColor: var(--white);
   --cardBg: #F3F3F3;
+  --navBg: var(--white);
 }
 
 .dark-theme {
@@ -109,6 +110,7 @@ ul {
   --btnBg: var(--secondary);
   --btnFontColor: var(--white);
   --cardBg: #2C2F36;
+  --navBg: #181c22;
 }
 
 @keyframes fadeInDown {
@@ -207,4 +209,117 @@ ul {
 .solution-full h2 {
   color: var(--primary);
   margin-top: 0;
+}
+
+.main-nav {
+  background: var(--navBg, var(--white));
+  margin: 0 auto;
+  max-width: 900px;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  position: relative;
+  top: -18px;
+  z-index: 2;
+  animation: fadeInDown 1.2s;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0.5rem 0;
+  gap: 2.5rem;
+}
+.main-nav li {
+  margin: 0;
+}
+.main-nav a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.main-nav a:hover, .main-nav a:focus {
+  background: var(--primary);
+  color: var(--white);
+}
+@media (max-width: 600px) {
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .main-nav {
+    max-width: 100%;
+    border-radius: 0 0 16px 16px;
+  }
+}
+
+.team-section {
+  max-width: 1100px;
+  margin: 2rem auto 0 auto;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+}
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.team-member {
+  background: var(--cardBg);
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 1.5rem 1rem;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.team-member:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.13);
+}
+.team-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  background: #eee;
+}
+.team-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0.3rem 0;
+  color: var(--primary);
+}
+.team-desc {
+  font-size: 0.98rem;
+  color: var(--fontColor);
+  margin: 0;
+}
+.team-role {
+  font-size: 1rem;
+  color: var(--secondary);
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+@media (max-width: 800px) {
+  .team-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .team-member {
+    width: 90%;
+    max-width: 350px;
+  }
 }
