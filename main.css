@@ -325,3 +325,19 @@ ul {
     max-width: 350px;
   }
 }
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 2rem auto 4rem auto; 
+  padding: 0 1rem; 
+}
+
+.team-desc {
+  font-size: 1.1rem;
+  text-align: justify; 
+  max-width: 500px;
+  line-height: 1.7; 
+  white-space: pre-line; 
+}
