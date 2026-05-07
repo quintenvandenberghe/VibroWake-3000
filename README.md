@@ -14,8 +14,6 @@ De meeste trilwekkers kennen maar één stand: 100% kracht. Door een frequentier
 
 Geleidelijke opbouw: Geen hartverzakking meer bij het eerste contact. De wekker kan heel zachtjes beginnen en de frequentie langzaam opvoeren (een 'sunrise effect', maar dan met kinetische energie).
 
-Aanpasbare patronen: Door te variëren in hertz kunnen we verschillende ritmes creëren. Denk aan een hartslagritme of een pulserende trilling die effectiever is in het doorbreken van de diepe slaap.
-
 Efficiëntie en kracht: De regelaar zorgt ervoor dat de motor stabiel draait, ongeacht de gewenste snelheid, wat slijtage vermindert en de betrouwbaarheid vergroot.
 
 De Toekomst van Toegankelijkheid
