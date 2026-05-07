@@ -20,159 +20,59 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="logboek.html">Logboek</a></li>
       <li><a href="team.html">Team</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      
     </ul>
   </nav>
   <button class="btn">Dark</button>
   <main>
     <section class="logboek-section">
-      <h1>Projectlogboek</h1>
+      <h1>Projectverslag: Ontwikkeling van een Intelligent Trilwekkersysteem</h1>
+      <h1>Periode: September 2025 – Mei 2026</h1>
       <section>
-        <h2>25/09/2025</h2>
+        <h2>1. Projectinitiatie en Conceptfase (September 2025)</h2>
         <ul>
-          <li><strong>Planner opgesteld:</strong> taken verdeeld.</li>
-          <li><strong>Teamindeling:</strong> Website: Quinten | Hardware: Laurens & Timon | Software: Yanni & Cédric</li>
-          <li><strong>Arduino gekozen:</strong> Arduino UNO R4 WiFi</li>
-          <li><strong>Brainstorm:</strong> slim stopcontact aanstuurbaar via Google Home of Alexa</li>
+          Het project ging op 25 september 2025 van start met de definitie van de projectstructuur en taakverdeling. De focus lag initieel op de ontwikkeling van een slim stopcontact, aanstuurbaar via domoticasystemen zoals Google Home en Alexa. Als technisch fundament werd gekozen voor de Arduino UNO R4 WIFI.
+Tijdens de brainstormsessies verschoof de scope naar een innovatieve wekoplossing: een wekker op basis van haptische feedback (trillingen) in combinatie met lichtsimulatie (opkomende zon).
         </ul>
       </section>
       <section>
-        <h2>02/10/2025</h2>
+        <h2>2. Onderzoek en Hardware-validatie (Oktober 2025)</h2>
         <ul>
-          <li>Onderdelen gezocht, o.a. trilmodules op Amazon en Temu.</li>
-          <li>Brainstorm over zonsopganglamp, instelbaar.</li>
-          <li>Trilmat met drie standen gevonden.</li>
+          In oktober lag de nadruk op de sourcing en het testen van mechanische componenten. Er werd onderzoek gedaan naar diverse trilmotoren en de aansturing daarvan.
+        </ul>
+        <strong>Belangrijke mijlpalen:</strong>
+        <ul>
+          <li>Prototyping: Een eerste testopstelling van de motor wees uit dat de trillingsintensiteit te hoog was. Door de motor gefixeerd te testen (onder matten in de gymzaal), werd een optimaal trillingsniveau bereikt voor de beoogde toepassing.</li>
+          <li>Mechanische aanpassing: Er werd gekozen voor een oplossing waarbij assen werden afgefreesd en gelagerd om de gewenste mechanische overdracht te realiseren.</li>
         </ul>
       </section>
       <section>
-        <h2>09/10/2025</h2>
+        <h2>3. Technische Transitie en Netwerkbeperkingen (November – December 2025)</h2>
         <ul>
-          <li>Alternatieven gezocht voor trilmatrascontroller (as lageren, deel wegfrezen).</li>
-          <li>Raspberry Pi wekkerradio onderzocht (Pico Alarm Clock).</li>
-          <li><strong>Plan:</strong> Hardware knoppen door Laurens & Yanni | Software door Timon & Cédric</li>
+          Gedurende november werd het Projectcanvas uitgewerkt en de website gelanceerd voor externe communicatie. Op technisch vlak stuitte het team echter op een cruciale beperking: de Arduino-omgeving bleek in combinatie met de lokale netwerkinfrastructuur onvoldoende schaalbaar voor een stabiele app-verbinding.
+Strategische beslissing: Er werd besloten om over te stappen op de Raspberry Pi. Dit platform bood de nodige rekenkracht en flexibiliteit voor een robuustere interface en stabielere netwerkverbindingen.
         </ul>
       </section>
       <section>
-        <h2>16/10/2025</h2>
+        <h2>4. Engineering en Systeemintegratie (Januari – Februari 2026)</h2>
         <ul>
-          <li>Motor ontvangen en gemonteerd.</li>
-          <li>Motor trilt te hard &#10140; vastgemaakt met colsonbandjes om te testen.</li>
-          <li>Test in gymzaal tussen matten: trillingen waren goed.</li>
+          Begin 2026 lag de focus op de elektrische veiligheid en de integratie van de hardware-componenten.
+          <li>Elektronica: De installatie van een frequentieregelaar en een relais maakte een nauwkeurige aansturing van de motor mogelijk.</li>
+          <li>Software & UI: Er werd gestart met de ontwikkeling van een touchscreen-interface. Met behulp van geavanceerde scripting werd de wekkerfunctionaliteit geprogrammeerd en getest op de Raspberry Pi.</li>
+          <li>Behuizing: In SketchUp werd een op maat gemaakte behuizing ontworpen voor de frequentieregelaar en het relais, om een veilige en professionele afwerking te garanderen.</li>
         </ul>
       </section>
       <section>
-        <h2>23/10/2025</h2>
+        <h2>5. Optimalisatie en Finalisering (Maart – April 2026)</h2>
         <ul>
-          <li><strong>Timon & Laurens:</strong> gewerkt aan canvas + planner.</li>
-          <li><strong>Yanni & Cedric:</strong> onderzoek naar slim stopcontact.</li>
-          <li><strong>Quinten:</strong> website opgeknapt en aangevuld.</li>
+          In de laatste fase werden de fysieke behuizingen gerealiseerd middels 3D-printing (STL-conversie). Ondanks technische uitdagingen met de 3D-printapparatuur, konden de onderdelen succesvol worden geassembleerd.
+Software-verfijning:Er werd kritisch gekeken naar de gebruikerservaring (UX). Cédric optimaliseerde de code om "foutieve triggers" bij de stopknop te voorkomen en de stabiliteit van de interface te verhogen.
         </ul>
       </section>
       <section>
-        <h2>20/11/2025</h2>
+        <h2>Huidige Status en To-do</h2>
         <ul>
-          <li><strong>Timon & Laurens:</strong> canvas afgewerkt en ingeleverd.</li>
-          <li><strong>Yanni & Cedric:</strong> verder onderzoek slim stopcontact + LED laten knipperen met Arduino UNO R4 WiFi.</li>
-          <li><strong>Quinten:</strong> website bijgewerkt.</li>
-        </ul>
-      </section>
-      <section>
-        <h2>27/11/2025</h2>
-        <ul>
-          <li><strong>Timon & Laurens:</strong>Verder gezocht naar een app en gewacht op Cedric en Yanni tot ze klaar waren met het programmeren van de Arduino, zodat we de app konden testen.</li>
-          <li><strong>Yanni & Cedric:</strong>Lampje aangestuurd met de Arduino via het lokale netwerk.</li>
-          <li><strong>Quinten:</strong> website geüpdatet met nodige informatie + foto's gemaakt voor de teampagina.</li>
-        </ul>
-      </section>
-      <section>
-        <h2>4/12/2025</h2>
-        <ul>
-          <li><strong>Timon & Laurens:</strong>Tafel opnieuw opgebouwd en getest of de app de Arduino kan aansturen. Dit werkt, maar alleen via de webversie.</li>
-          <li><strong>Yanni & Cedric:</strong>Uitgezocht hoe de app werkt en video’s bekeken om informatie te verzamelen.</li>
-          <li><strong>Quinten:</strong>Foto’s toegevoegd aan de website en bijgesneden. De website verder aangepast en bijgewerkt.</li>
-          <li><strong>Team: </strong>Samen verder naar de video’s gekeken. Conclusie: via het netwerk gaat dit niet werken, omdat het beperkt is tot één netwerk. Oplossing: een andere manier zoeken voor de Arduino, zoals Bluetooth. Timon en Laurens kijken ook of werken met een Raspberry Pi beter is als het niet lukt met Arduino.</li>
-        </ul>
-      </section>
-      <section>
-        <h2>14/01/2026</h2>
-        <ul>
-          <li><strong>Timon & Laurens:</strong> De schakelaar en het relais zijn succesvol gemonteerd op de motor, waardoor het systeem nu betrouwbaar kan worden aangestuurd.</li>
-          <li><strong>Cedric & Yanni:</strong> De code voor de Arduino en het relais is geschreven en getest, zodat de hardware nu correct functioneert binnen het project.</li>
-          <li><strong>Quinten:</strong> Video’s en foto’s zijn toegevoegd aan de website om de voortgang en werking van het project duidelijk te presenteren.</li>
-        </ul>
-      </section>
-      <section>
-        <h2>22/01/2026</h2>
-        <ul>
-          <li><strong>Team: </strong>We hebben besloten om de Arduino te vervangen door een Raspberry Pi.</li>
-          <li><strong>Timon & Laurens:</strong> OLED schermen gezocht op verschillende websites &#10140; Smarti Pi touch 2.</li>
-          <li><strong>Cedric & Yanni:</strong> Raspberry Pi ingesteld. </li>
-          <li><strong>Quinten:</strong>Video geëdit door fragmenten samen te voegen. </li>
-        </ul>
-      </section>
-      <section>
-        <h2>29/01/2026</h2>
-        <ul>
-          <li><strong>Timon, Laurens en Yanni:</strong> Gekeken voor een manier om de motor aan het bed te bevestigen &rarr; Houder maken, in afwachting van een antwoord van mvr. Weerts op een bericht waarin we vroegen naar een foto van het bed of het type van het bed.</li>
-          <li><strong>Timon, Laurens en Yanni:</strong> Zoeken naar een oplossing voor de reststroom in een asynchrone motor als je hem uitschakelt zodat de relais niet beschadigd wordt. &rarr; Varistor</li>
-          <li><strong>Cedric:</strong> Code geschreven op Raspberry Pi &rarr; testen als het scherm er is.</li>
-          <li><strong>Quinten:</strong> Website aangevuld met kleinere details + Arduino veranderd naar Raspberry Pi.</li>
-        </ul>
-      </section>
-      <section>
-        <h2>05/02/2026</h2>
-        <ul>
-          <li><strong>Timon:</strong> PowerPoint presentatie over de foto’s van het bed.</li>
-          <li><strong>Hele groep:</strong> Gekeken naar de foto’s en hoe we de motor erop kunnen monteren &rarr; onder de topper &rarr; gekeken of hij warm werd &rarr; klein beetje, maar veilig.</li>
-          <li><strong>Quinten:</strong> Touchscreen trouble shooten.</li>
-        </ul>
-      </section>
-      <section>
-        <h2>12/02/2026</h2>
-        <ul>
-          <li><strong>Timon:</strong> Professionele groepsleider want er is vandaag heel veel werk gebeurd. Relais aangesloten tussen de Raspberry Pi en de frequentieregelaar, schok gekregen. Idee om een houder te maken voor frequentieregelaar + relais in eenzelfde bakje &rarr; tekenen op SketchUp &rarr; licentie vragen.</li>
-          <li><strong>Cedric:</strong> Deels met ChatGPT een code gemaakt voor de touchscreen.</li>
-          <li><strong>Yanni:</strong> Met ChatGPT code gemaakt voor de wekker &rarr; op het scherm aangesloten &rarr; code werkt.</li>
-          <li><strong>Quinten:</strong> Scherm gefixt en foto’s op de website geplaatst + ook code gemaakt met ChatGPT.</li>
-          <li><strong>Allemaal:</strong> Getest of de wekker code het doet op de motor en daarna via het touchscreen getest &rarr; code werkt maar moet nog een beetje aanpassen. In totaal hebben we drie verschillende codes getest.</li>
-        </ul>
-      </section>
-      <section>
-        <h2>26/02/2026</h2>
-        <ul>
-        <li><strong>Timon</strong>Een tijd sketchup licensie terug proberen toe te voegen &rarr; ging niet dus opnieuw gedownload wat lang duurt. </li>
-        <li><strong>Laurens</strong>Aan powerpoint van ons project gewerkt.</li>
-        <li><strong>Cedric</strong>Raspberry Pi connect op het scherm gezet en code geprogrammeerd om de four bij de stopknop op te lossen: als je drukte op de stopknop kon je ook meteen weer op aan drukken waardoor het soms automatisch terug aan ging bij het iets te lang indrukken van de stopknop. </li>
-        <li><strong>Quinten</strong>Aan powerpoint van ons project gewerkt.</li>
-        <li><strong>Yanni</strong>Mee gecodeerd met cedric.</li>
-        </ul>
-      </section>
-      <section>
-        <h2>12/03/2026</h2>
-        <ul>
-        <li><strong>Timon</strong>Aan sketchup gewerkt, Timon aan het bakje voor de frequentieregelaar en de relais, Yanni voor de draaiknop voor de frequentieregelaar. </li>
-        <li><strong>Laurens</strong>Aan de powerpoint verdergewerkt en wat dingetjes beter gemaakt. </li>
-        <li><strong>Cedric</strong>Aan de code van het scherm gewerkt. </li>
-        <li><strong>Quinten</strong>Aan de powerpoint verdergewerkt en wat dingetjes beter gemaakt. </li>
-        <li><strong>Yanni</strong>Aan sketchup gewerkt, Timon aan het bakje voor de frequentieregelaar en de relais, Yanni voor de draaiknop voor de frequentieregelaar. </li>
-        </ul>
-      </section>
-      <section>
-        <h2>19/03/2026</h2>
-        <ul>
-        <li><strong>Timon & Yanni</strong>Sketchup afgewerkt en extensies gedownload om het naar STL te converteren. Gestuurd naar mr Baens, 3D-printer is tijdelijk stuk dus andere leraar zoeken. Raf Paredis heeft geprint, klaar. </li>
-        <li><strong>Laurens & Quinten</strong>Aan de powerpoint verdergewerkt en wat dingetjes beter gemaakt. </li>
-        <li><strong>Cedric</strong>Afwezig </li>
-        </ul>
-      </section>
-      <section>
-        <h2>22/04/2026</h2>
-        <ul>
-          <li><strong>Timon</strong>Kabeltjes frequentieregelaar en relais eruit gehaald en terug ingestoken zodat ze in het bakje zitten. </li>
-          <li><strong>iedereen</strong>Gedacht om een deksel te maken voor het bakje en hoe deze gemaakt wordt.</li>  
-          <li><strong>Laurens & Quinten</strong>Verder gewerkt aan de powerpoint.  </li>
-          <li><strong>Cedric</strong>Script begonnen voor onze powerpoint. </li>
-          <li><strong>Yanni</strong>Deksel getekent en naar Raf Paredis doorgestuurd.</li>  
+          Het project bevindt zich momenteel in de afrondende fase. De resterende werkzaamheden betreffen de definitieve montage en het fine-tunen van de software-logica (zoals het vergrendelen van de tijdsinstellingen tijdens een actief alarm en de scherm-activering bij aanraking). De projectpresentatie en bijbehorende documentatie op de website worden momenteel gereedgemaakt voor de eindoplevering.
         </ul>
       </section>
   </main>
