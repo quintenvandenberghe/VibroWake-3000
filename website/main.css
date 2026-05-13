@@ -746,3 +746,26 @@ ul {
   box-shadow: 0 2px 12px rgba(0,0,0,0.07);
   margin-left: 250px;
   }
+  @media (max-width: 700px) {
+  .solution-img-motor,
+  .solution-img-dimmer,
+  .solution-img-raspberry,
+  .solution-img-arduino,
+  .solution-img-touchscreen,
+  .solution-img-3d-print {
+    width: 95vw;
+    max-width: 98vw;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: block;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    rotate: none;
+  }
+  .solution-full img {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none;
+  }
+}
