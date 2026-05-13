@@ -82,69 +82,28 @@
     </section>
     <section class="solution-full card-style">
       <h2>Onze oplossing</h2>
-      <h3>Trillmotor</h3>
-      <p>Wij hebben gekozen voor een trillmotor bij het bed van de gebruiker. 
-        Deze motor zorgt voor sterke trillingen die de gebruiker op een doeltreffende manier
-        wekt zonder geluid te maken. Op het ingestelde tijdstip begint de motor te trillen,
-        wat een fysieke prikkel geeft die moeilijk te negeren is. Dit maakt onze oplossing
-        ideaal voor dove of slechthorende personen die op een betrouwbare en comfortabele
-        manier wakker willen worden.
-      </p>
-      <div class="media-block">
-        <video src="video project.mp4" class="project-video" controls style="width:100%;max-width:600px;display:block;margin:1.5rem auto;"></video>
-      </div>
-      <h3>Raspberry Pi</h3>
-      <p>Met behulp van een Raspberry Pi kunnen we de trilwekker eenvoudig programmeren en aanpassen aan de wensen 
-        van de gebruiker. Door gebruik te maken van verschillende sensoren en modules, kunnen we de 
-        functionaliteit van de wekker uitbreiden en verbeteren. De Raspberry Pi maakt het mogelijk om de trillwekker 
-        van op afstand te bedienen en te configureren via een app of een ander apparaat. Hierdoor wordt het
-         gebruiksgemak vergroot en kan de gebruiker de wekker volledig afstemmen op zijn of haar behoeften.</p>
-      <div class="video-carousel">
-        <img src="raspberry-pi.png" alt="Raspberry Pi" class="carousel-img">
-      </div>
-      <h3>Touchscreen bediening</h3>
-      <p>
-        Bij onze Raspberry Pi hebben we een touchscreen toegevoegd. Dankzij dit touchscreen kunnen gebruikers eenvoudig en intuïtief de wekker instellen en aanpassen. Het programma op het scherm is overzichtelijk en gebruiksvriendelijk ontworpen, zodat je met een paar tikken het alarm kunt instellen, wijzigen of uitschakelen. 
-        Dit maakt het systeem toegankelijk voor iedereen, zonder dat er technische kennis nodig is. Het touchscreen zorgt ervoor dat de wekker snel en flexibel te bedienen is, wat het gebruiksgemak aanzienlijk vergroot.
-      </p>
-      <div class="slideshow-container">
-        <button class="slide-arrow left" onclick="plusSlides(-1)">&#10094;</button>
-        <div class="slide fade">
-          <img src="raspberry-pi-met-scherm.png" alt="Raspberry Pi met scherm">
-          <div class="caption">Raspberry Pi met touchscreen</div>
-        </div>
-        <div class="slide fade">
-          <img src="20260212_100342.png" alt="Raspberry Pi project foto 1">
-          <div class="caption">Raspberry Pi met touchscreen</div>
-        </div>
-        <div class="slide fade">
-          <img src="20260212_100344.png" alt="Raspberry Pi project foto 2">
-          <div class="caption">Raspberry Pi met touchscreen</div>
-        </div>
-        <div class="slide fade">
-          <img src="20260212_100348.png" alt="Raspberry Pi project foto 3">
-          <div class="caption">Raspberry Pi met touchscreen</div>
-        </div>
-        <button class="slide-arrow right" onclick="plusSlides(1)">&#10095;</button>
-      </div>
-      <div class="dots" style="text-align:center;">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
-      <h3>3D-Prints</h3>
-      <ul>
-        <li>3D-print van de </li>
-        <li>3D-print van de </li>
-      </ul>
-    <h3>hardware configuratie</h3>
-    <ul>
-      <li>tekst</li>
-    </ul>
-    <img src="scherm.jpg" alt="scherm" class="project-img" style="max-width:300px; height:auto; display:block; margin:1rem auto;">
-    <img src="frequentieregelaar.jpg" alt="snelheidsregelaar" class="project-img" style="max-width:300px; height:auto; display:block; margin:1rem auto;">
-    </section>
+      <ul>Voor onze problemen moesten we natuurlijk ook oplossingen vinden.
+        We kozen voor een zeer sterke trilmotor, dit leverde een te sterke trilling op.</ul>
+        <img src="foto motor.png" alt="trilmotor" class="solution-img-motor">
+        <ul>
+          Door de motor te fixeren en te testen onder matten in de gymzaal, konden we de trilling optimaliseren voor onze toepassing.
+         Dit werd opgelost door een snelheidsregelaar of dimmer te gebruiken.
+         Nu kan de gebruiken de sterkte van de trilling zelf bepalen.</ul>
+         <img src="frequentieregelaar.jpg" alt="snelheidsregelaar" class="solution-img-dimmer">
+         <ul>
+          We konden niet veel doen met de Arduino en een korte evaluatie hebben we beslist om over te stappen naar een Raspberry Pi.
+           Dit is een mini computer die we aansturen via een code op de Raspberry Pi zelf.</ul>
+            <img src="raspberry-pi.png" alt="Raspberry Pi" class="solution-img-raspberry">
+            <img src="arduino.png" alt="Arduino" class="solution-img-arduino">
+              <ul>
+            Het hele interface is gemakkelijk te gebruiken dankzij een touchscreen. 
+            Deze overstap bleek over de komende weken veel gunstiger te zijn voor ons project. </ul>
+              <img src="scherm.jpg" alt="touchscreen" class="solution-img-touchscreen">
+                <ul>
+            Om de spanning van de Raspberry Pi te verhogen hebben we gebruik gemaakt van een relais.
+          Dit alles werd in een 3D geprinte omhuizing gemonteerd. </ul>
+          <img src="3d-print.jpg" alt="3D print" class="solution-img-3d-print">
+     </section>
     <footer class="site-footer">
     <p>&copy; 2026 Vibro Wake 3000 – Toegankelijke technologie voor iedereen</p>
   </footer>
